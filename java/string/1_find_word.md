@@ -92,7 +92,7 @@ public class Main {
     - 문자열에 문자 1개만 존재 -> String의 `charAt()` 메소드를 통하여 문자열의 첫번째 인덱스인 `0`에 접근
   + [`next()` 와 `nextLine()`의 차이점](https://devlog-wjdrbs96.tistory.com/80)
 
-### 2-1. 방법 2
+### 2-2. 방법 2
 ```java
 import java.util.Scanner;
 

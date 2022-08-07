@@ -88,7 +88,7 @@ public class Main {
 }
 ```
 
-### 2-1. 방법 2
+### 2-2. 방법 2
 ```java
 import java.util.Scanner;
   
@@ -131,4 +131,5 @@ public class Main {
 ---
 
 ## 3. 기록 일지
+### 3-1. ASCII code vs 대소문자 변환 메소드
 ASCII code를 이용한 풀이는 163ms, 대소문자 변환 메소드를 이용한 풀이는 154ms로 **대소문자 변환 메소드**를 사용하는게 더 빨랐다.
