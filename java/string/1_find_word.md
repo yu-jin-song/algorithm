@@ -27,7 +27,7 @@ public class Main {
     public static void main(String[] args){
         Main mc = new Main();
         Scanner in = new Scanner(System.in);
-        String str = in.nextLine().toUpperCase;
+        String str = in.nextLine().toUpperCase();
         char c = in.next().charAt(0);
 
         System.out.println(mc.solution(str, c));
