@@ -21,12 +21,8 @@ public class Main {
             int x = Integer.parseInt(points[0]);
             int y = Integer.parseInt(points[1]);
             
-            List<Integer> pointY = null;
-            if(positions.containsKey(x)) {
-            	pointY = positions.get(x);
-            } else {
-            	pointY = new ArrayList<>();
-            }
+            List<Integer> pointY = positions.containsKey(x) ?
+                positions.get(x) : new ArrayList<>();
             pointY.add(y);
             
             positions.put(x, pointY);
