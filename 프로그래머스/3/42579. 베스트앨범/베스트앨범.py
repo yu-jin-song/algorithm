@@ -19,11 +19,11 @@ def solution(genres, plays):
     for genre, total_plays in genre_total_plays:
         sorted_genres_plays = sorted(genres_dict[genre], key=lambda x: x[1], reverse=True)
         cnt = 0
-        for idx, play in sorted_genres_plays:
-            cnt += 1
-            if cnt > 2:
-                break
-            else:
-                answer.append(idx)
+        for idx, play in sorted_genres_plays[:2]:
+            # cnt += 1
+            # if cnt > 2:
+            #     break
+            # else:
+            answer.append(idx)
     # 베스트 앨범에 들어갈 노래의 고유 번호를 순서대로 return
     return answer
