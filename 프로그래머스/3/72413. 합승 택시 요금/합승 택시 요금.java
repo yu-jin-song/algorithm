@@ -52,6 +52,11 @@ class Solution {
         while (!queue.isEmpty()) {
             Node current = queue.poll();
             
+            // 현재 경로까지의 비용이 단순 비용보다 작다면 skip 
+            if (cost[current.dest] < current.cost) {
+                continue;
+            }
+            
             for (Node next : nextNodes[current.dest]) {
                 // if (!visited[next.dest]) {  // 방문하지 않은 노드인 경우만
                     int newCost = cost[current.dest] + next.cost;
